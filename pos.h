@@ -1,3 +1,5 @@
+// defines objects and predeclares functions used in pos.c
+
 #ifndef POS_H
 #define POS_H
 
