@@ -1,3 +1,4 @@
+// A player interface that plays the game using ./play
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
