@@ -1,3 +1,5 @@
+// Evidence file with test cases testing the various mechanisms, functions, and their interactions with defined objects
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "logic.h"
