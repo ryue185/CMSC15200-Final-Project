@@ -1,3 +1,5 @@
+// Header file that defines relevant objects and predeclares the functions defined in logic.c
+
 #ifndef LOGIC_H
 #define LOGIC_H
 
