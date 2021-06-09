@@ -1,3 +1,4 @@
+// In this file is code that defines the game board for Hangtime, prints it, and deal with its relevant operations
 #include <stdlib.h>
 #include <stdio.h>
 #include "board.h"
