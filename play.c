@@ -85,12 +85,12 @@ int main(int argc, char* argv[])
     
     // raising errors when inputs are invalid
     if(width > 62){
-        fprintf(stderr, "invalid width: cannot exceed 62");
+        fprintf(stderr, "invalid width: board dimension exceeds limit of 62");
         exit(1);
     }   
     
     if(height > 62){
-        fprintf(stderr, "invalid height: cannot exceed 62");
+        fprintf(stderr, "invalid height: board dimension exceeds limit of 62");
         exit(1);
     }
     
