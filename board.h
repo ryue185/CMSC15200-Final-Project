@@ -1,3 +1,5 @@
+// A header file that defines relevant objects and pre-declares functions defined in board.c
+
 #ifndef BOARD_H
 #define BOARD_H
 #include "pos.h"
