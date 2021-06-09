@@ -49,6 +49,7 @@ int main(int argc, char* argv[])
     unsigned int run = 3;
     unsigned int hang_time = 2;
     enum type type = BITS;
+    unsigned int type_chosen = 0;
 
     // allows each field of the game to be customizable
     for(int i = 1; i<argc-1; i++){
@@ -65,11 +66,37 @@ int main(int argc, char* argv[])
             hang_time = atof(argv[i+1]);
         }
         if(!(strcmp("-m", argv[i]))){
+            if(type_chosen == 1){
+                fprintf(stderr, "type: game type cannot be both MATRIX AND BITS");
+                exit(1);
+            }
             type = MATRIX;
+            type_chosen = 1;
         }
         if(!(strcmp("-b", argv[i]))){
+            if(type_chosen == 1){
+                fprintf(stderr, "type: game type cannot be both MATRIX AND BITS");
+                exit(1);
+            }
             type = BITS;
+            type_chosen = 1;
         }
+    }
+    
+    // raising errors when inputs are invalid
+    if(width > 62){
+        fprintf(stderr, "invalid width: cannot exceed 62");
+        exit(1);
+    }   
+    
+    if(height > 62){
+        fprintf(stderr, "invalid height: cannot exceed 62");
+        exit(1);
+    }
+    
+    if((run > height)&&(run > width)){
+        fprintf(stderr, "invalid run: such a long run would always result in DRAW");
+        exit(1);
     }
     
     // initializes a new game
