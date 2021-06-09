@@ -1,3 +1,6 @@
+// defines the relevant functions that deal with a position object on a board
+// defines and deals with a queue of pos objects, used to to keep track of which positions are "hanging"
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "pos.h"
