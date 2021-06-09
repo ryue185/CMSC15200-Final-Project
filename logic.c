@@ -1,3 +1,5 @@
+// defines the logic of a game, i.e. placing pieces, checking the current state of the game
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "logic.h"
